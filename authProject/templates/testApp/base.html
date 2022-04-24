@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+    <title>auth Appn</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href={% static 'css/demo.css' %}>
+     {%block xyz%}
+     {%endblock%}
+</head>
+    <body>
+        <nav class = "navbar navbar-blue bgcolor=yellow">
+            <div class = "container">
+                <div class ="nav navbar-navbar navbar-left">
+                    <a class="navbar-brand" href="/home">Home</a>
+                    <a class="navbar-brand" href="/java">Java</a>
+                    <a class="navbar-brand" href="/python">Python</a>
+                    <a class="navbar-brand" href="/aptitude">Aptitude</a>
+                </div>
+                    <div class="nav navbar-navbar navbar-right">
+                        <a class="navbar-brand" href="/signup">Signup</a>
+                        <a class="navbar-brand" href="/accounts/login">Login</a>
+                        <a class="navbar-brand" href="/accounts/logout">Logout</a>
+                     </div
+            </div>
+        </nav>
+        {% block body_block %}
+
+        {% endblock %}
+    <body>
+    </html>

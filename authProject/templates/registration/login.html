@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{%extends 'testApp/base.html'%}
+{%block body_block%}
+<div class="container" align="center">
+    <h1>Login Form</h1><hr><br>
+    <form method = "POST">
+        {% csrf_token %}
+        <table>
+            {{form.as_table}}
+        </table><br><br>
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="submit" class="btn btn-lg btn-primary" value="Login">
+    </form><br><br><br>
+</div>
+{%endblock%}

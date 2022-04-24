@@ -1,0 +1,27 @@
+.container {
+    background-color: gold;
+    color: black;
+    font-weight: bold;
+}
+
+.jumbotron {
+    background-color: blue;
+    color: deeppink;
+}
+
+body {
+    background-color: gainsboro;
+    color: black;
+}
+
+img {
+    display: block;
+    margin-left: 910px;
+    margin-right: 0px;
+}
+
+#heading {
+    display: block;
+    margin-top: 0%;
+    color: green;
+}

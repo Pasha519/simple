@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% extends 'testApp/base.html' %}
+{% load static%}
+{% block body_block %}
+<div class="jumbotron">
+    <div class="container"><br>
+        <div class="topright">
+            <img src = "{%static "images/pasha.png"%}" alt = "oops" width="170" height="170">
+        </div>
+        <div class="topleft">
+            <h1 id = "heading">&nbsp;Welcome to Pasha Software Solutions</h1><hr>
+            <h3>Technologies:</h3><br>
+            <ul>
+                <h5><li>Core Java,Servlets,Jdbc,Jsp,Hibernate,Spring</li></h5>
+                <h5><li>Python,Django,Django Rest Framework</li></h5>
+                <h5><li>C,C++</li></h5>
+                <h5><li>Sap-Abap</li></h5>
+                <h5><li>Html,JavaScript,CSS,Bootstrap</li></h5><br>
+        </div>
+      </div>
+    </div>
+{% endblock%}
